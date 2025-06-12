@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula 1 Fan Page</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="p3.css" />
+
+  <!-- Model Viewer Script -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="all">
+      <div class="logo">
+        <img src="pngwing.com.png" alt="F1 Logo" height="60px" width="60px" />
+        <p>Formula 1</p>
+      </div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="nav-sec">
+        <ul class="nav-list">
+          <li class="bt-an"><a href="#">Home</a></li>
+          <li class="bt-an"><a href="#">About</a></li>
+          <li class="bt-an"><a href="#">Contact</a></li>
+          <li class="bt-an"><a href="#">Services</a></li>
+          <li class="bt-an"><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="herop">
+      <h1>Built by Fans. Driven by Passion.</h1>
+      <p>Join the fastest growing F1 community on the web.</p>
+    </div>
+  </section>
+
+  <!-- Rest of your HTML remains the same -->
+
+
+  <!-- Engineering Section -->
+  <section id="model" class="engineering">
+
+    <div  class="rb">
+    <div class="head"><h1>RB 18</h1></div>
+    </div>
+
+
+    
+      <div class="con">
+
+        
+          <div class="f1-model">
+            <model-viewer
+              src="f2.glb"
+              alt="Red Bull 2022 F1 Car"
+              auto-rotate
+              camera-controls
+              shadow-intensity="1"
+              shadow-softness="0.5"
+            ></model-viewer>
+          </div>
+        
+
+
+
+    <div class="rb18-brief">
+  <h2>Red Bull RB18 – 2022 F1 Car</h2>
+  <p>
+    The RB18 was Red Bull Racing’s 2022 Formula 1 car, driven by Max Verstappen and Sergio Pérez. Designed for the new ground-effect era, it combined speed, aerodynamics, and reliability.
+  </p>
+  <ul>
+    <li>Engine: 1.6L V6 Turbo Hybrid</li>
+    <li>Top Speed: 350+ km/h</li>
+    <li>Chassis: Carbon Fibre Monocoque</li>
+    <li>Titles: Drivers & Constructors Champion</li>
+  </ul>
+</div>
+      </div>
+
+      <section id="engine" class="engine-slider-section">
+  <div class="engine-slider">
+    <div class="engine-images">
+      <img src="power.webp" class="engine-img active" alt="Power Unit">
+      <img src="turbo.jpg" class="engine-img" alt="Turbocharger">
+      <img src="mguk.jpg" class="engine-img" alt="MGU-K">
+      <img src="mguh.webp" class="engine-img" alt="MGU-H">
+      <img src="ers.webp" class="engine-img" alt="ERS">
+      <img src="battery.jpg" class="engine-img" alt="Battery">
+      <img src="exhaust.jpeg" class="engine-img" alt="Exhaust">
+    </div>
+
+    <div class="dots">
+      <span onclick="showSlide(0)" class="dot active"></span>
+      <span onclick="showSlide(1)" class="dot"></span>
+      <span onclick="showSlide(2)" class="dot"></span>
+      <span onclick="showSlide(3)" class="dot"></span>
+      <span onclick="showSlide(4)" class="dot"></span>
+      <span onclick="showSlide(5)" class="dot"></span>
+      <span onclick="showSlide(6)" class="dot"></span>
+    </div>
+  </div>
+</section>
+
+       <section id="aero" class="aero-section">
+  <div class="aero-container">
+    <div class="aero-image">
+      <img src="66e36e7cd17aa3c7b2b24f99.webp" alt="Aerodynamic Flow RB18">
+    </div>
+    <div class="aero-text">
+      <h2>Aerodynamic Engineering</h2>
+      <p>The RB18’s aerodynamic package is a masterpiece of efficiency. Built for maximum downforce with minimal drag, it features:</p>
+      <ul>
+        <li><strong>Front Wing:</strong> Sculpts airflow to the floor and around tires.</li>
+        <li><strong>Rear Wing:</strong> Provides stability and drag reduction via DRS.</li>
+        <li><strong>Ground Effect:</strong> Venturi tunnels channel air under the car for suction-like downforce.</li>
+        <li><strong>Bargeboards & Deflectors:</strong> Manage turbulent wake and direct air precisely.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="video" class="video-section">
+  <h2 class="section-title">🎥 Behind the Speed</h2>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NuBRjCqDsdI?si=rRnx49TOK669M--y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-description">
+      <h3>RB18 Development Story</h3>
+      <p>
+        Take a closer look at how the Red Bull RB18 revolutionized Formula 1 in 2022 — aerodynamic breakthroughs, power unit upgrades, and the people behind the machine.
+      </p>
+    </div>
+  </div>
+</section>
+  </section>
+
+
+<footer id="footer" class="site-footer">
+  <div class="footer-container">
+    <div class="footer-branding">
+      <img src="pngwing.com.png" alt="F1 Logo" width="50" />
+      <h3>Red Bull F1</h3>
+      <p>Engineered for Speed. Designed for Victory.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#engine">Engine</a></li>
+        <li><a href="#aero">Aerodynamics</a></li>
+        <li><a href="#video">Videos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a><br>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Red Bull F1 Project. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+  <!-- JS Logic -->
+ <script src="p3.js"></script>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
 
